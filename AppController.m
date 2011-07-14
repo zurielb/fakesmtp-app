@@ -29,7 +29,7 @@
 }
 
 -(id)init {
-	if(self = [super init]) {
+	if((self = [super init])) {
 		listenSocket = [[AsyncSocket alloc] initWithDelegate:self];
 		connectedSockets = [[NSMutableArray alloc] initWithCapacity:1];
 		

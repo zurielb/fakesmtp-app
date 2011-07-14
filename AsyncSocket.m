@@ -161,7 +161,7 @@ static void MyCFWriteStreamCallback (CFWriteStreamRef stream, CFStreamEventType 
 		terminator:(NSData *)e
          maxLength:(CFIndex)m
 {
-	if(self = [super init])
+	if((self = [super init]))
 	{
 		buffer = [d retain];
 		timeout = t;
@@ -300,7 +300,7 @@ static void MyCFWriteStreamCallback (CFWriteStreamRef stream, CFStreamEventType 
 
 - (id)initWithData:(NSData *)d timeout:(NSTimeInterval)t tag:(long)i;
 {
-	if(self = [super init])
+	if((self = [super init]))
 	{
 		buffer = [d retain];
 		timeout = t;
@@ -337,7 +337,7 @@ static void MyCFWriteStreamCallback (CFWriteStreamRef stream, CFStreamEventType 
 // Designated initializer.
 - (id)initWithDelegate:(id)delegate userData:(long)userData
 {
-	if(self = [super init])
+	if((self = [super init]))
 	{
 		theFlags = 0x00;
 		theDelegate = delegate;
@@ -737,14 +737,12 @@ Failed:;
 {
 	if(theDelegate == NULL)
 	{
-		NSString *message = @"Attempting to connect without a delegate. Set a delegate first.";
-		[NSException raise:AsyncSocketException format:message];
+		[NSException raise:AsyncSocketException format: @"Attempting to connect without a delegate. Set a delegate first."];
 	}
 
 	if(theSocket != NULL || theSocket6 != NULL)
 	{
-		NSString *message = @"Attempting to connect while connected or accepting connections. Disconnect first.";
-		[NSException raise:AsyncSocketException format:message];
+		[NSException raise:AsyncSocketException format: @"Attempting to connect while connected or accepting connections. Disconnect first."];
 	}
 	
 	BOOL pass = YES;
@@ -780,14 +778,12 @@ Failed:;
 {
 	if (theDelegate == NULL)
 	{
-		NSString *message = @"Attempting to connect without a delegate. Set a delegate first.";
-		[NSException raise:AsyncSocketException format:message];
+		[NSException raise:AsyncSocketException format: @"Attempting to connect without a delegate. Set a delegate first."];
 	}
 	
 	if (theSocket != NULL || theSocket6 != NULL)
 	{
-		NSString *message = @"Attempting to connect while connected or accepting connections. Disconnect first.";
-		[NSException raise:AsyncSocketException format:message];
+		[NSException raise:AsyncSocketException format: @"Attempting to connect while connected or accepting connections. Disconnect first."];
 	}
 	
 	BOOL pass = YES;
