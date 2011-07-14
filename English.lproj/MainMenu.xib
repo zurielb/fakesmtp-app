@@ -1433,7 +1433,7 @@
 					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="301038739"/>
 				</object>
-				<string key="NSScreenRect">{{0, 0}, {1680, 1028}}</string>
+				<string key="NSScreenRect">{{0, 0}, {1920, 1058}}</string>
 				<string key="NSMaxSize">{1e+13, 1e+13}</string>
 			</object>
 			<object class="NSCustomObject" id="755631768">
@@ -1449,11 +1449,11 @@
 				<bool key="NSSharedInstance">YES</bool>
 			</object>
 			<object class="NSWindowTemplate" id="188112654">
-				<int key="NSWindowStyleMask">271</int>
+				<int key="NSWindowStyleMask">15</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{235, 426}, {214, 133}}</string>
+				<string key="NSWindowRect">{{235, 426}, {245, 123}}</string>
 				<int key="NSWTFlags">1685585920</int>
-				<string key="NSWindowTitle">Preferences</string>
+				<string key="NSWindowTitle">FakeSMTP Preferences</string>
 				<string key="NSWindowClass">NSWindow</string>
 				<nil key="NSViewClass"/>
 				<object class="NSView" key="NSWindowView" id="243030822">
@@ -1463,7 +1463,7 @@
 						<object class="NSMatrix" id="216829789">
 							<reference key="NSNextResponder" ref="243030822"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{55, 30}, {61, 58}}</string>
+							<string key="NSFrame">{{54, 20}, {61, 58}}</string>
 							<reference key="NSSuperview" ref="243030822"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="800213980"/>
@@ -1678,7 +1678,7 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 						<object class="NSTextField" id="100977337">
 							<reference key="NSNextResponder" ref="243030822"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{68, 96}, {82, 17}}</string>
+							<string key="NSFrame">{{67, 86}, {82, 17}}</string>
 							<reference key="NSSuperview" ref="243030822"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="216829789"/>
@@ -1985,7 +1985,7 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 						<object class="NSTextField" id="944510746">
 							<reference key="NSNextResponder" ref="243030822"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{109, 50}, {38, 17}}</string>
+							<string key="NSFrame">{{108, 40}, {38, 17}}</string>
 							<reference key="NSSuperview" ref="243030822"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="205868188"/>
@@ -2003,7 +2003,7 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 						<object class="NSTextField" id="800213980">
 							<reference key="NSNextResponder" ref="243030822"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{109, 71}, {38, 17}}</string>
+							<string key="NSFrame">{{108, 61}, {38, 17}}</string>
 							<reference key="NSSuperview" ref="243030822"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="944510746"/>
@@ -2021,7 +2021,7 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 						<object class="NSTextField" id="205868188">
 							<reference key="NSNextResponder" ref="243030822"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{112, 30}, {50, 19}}</string>
+							<string key="NSFrame">{{111, 20}, {50, 19}}</string>
 							<reference key="NSSuperview" ref="243030822"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView"/>
@@ -2053,12 +2053,12 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 							</object>
 						</object>
 					</array>
-					<string key="NSFrame">{{7, 11}, {214, 133}}</string>
+					<string key="NSFrame">{{7, 11}, {245, 123}}</string>
 					<reference key="NSSuperview"/>
 					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="100977337"/>
 				</object>
-				<string key="NSScreenRect">{{0, 0}, {1680, 1028}}</string>
+				<string key="NSScreenRect">{{0, 0}, {1920, 1058}}</string>
 				<string key="NSMaxSize">{1e+13, 1e+13}</string>
 			</object>
 			<object class="NSCustomObject" id="562965542">
@@ -2729,11 +2729,11 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
-						<string key="label">showWindow:</string>
-						<reference key="source" ref="562965542"/>
+						<string key="label">makeKeyAndOrderFront:</string>
+						<reference key="source" ref="188112654"/>
 						<reference key="destination" ref="275836744"/>
 					</object>
-					<int key="connectionID">572</int>
+					<int key="connectionID">573</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -4076,7 +4076,7 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">572</int>
+			<int key="maxID">573</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">

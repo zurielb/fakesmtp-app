@@ -123,6 +123,7 @@
 		NSLog(@"Running...");
 		isRunning = YES;
 		[startStopButton setLabel:@"Stop SMTP"];
+    [startStopButton setImage: [[NSImage alloc] initWithContentsOfFile: [[NSBundle mainBundle] pathForImageResource:@"stop"]]];
 		NSNumber *portNum = [NSNumber numberWithInt:port];
 		[[NSUserDefaults standardUserDefaults] setValue:portNum forKey:@"runningOnPort"];
 		NSString *startMsg = [NSString stringWithFormat:@"Started listening on port: %@\r\n", portNum];
@@ -142,6 +143,7 @@
 
 		isRunning = NO;
 		[startStopButton setLabel:@"Start SMTP"];
+    [startStopButton setImage: [[NSImage alloc] initWithContentsOfFile: [[NSBundle mainBundle] pathForImageResource:@"play"]]];
 	}
 }
 
